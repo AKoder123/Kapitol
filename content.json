@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "deckId": "kapitol-spacex-tesla",
+    "title": "Kapitol — The SpaceX & Tesla of Construction",
+    "theme": "ignition"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "eyebrow": "Kapitol Group",
+      "headline": "The SpaceX and Tesla of construction.",
+      "subheadline": "Australia's software-native builder — engineering the industry's next decade.",
+      "cta": "Business Narrative · 2026–2028"
+    },
+    {
+      "type": "content",
+      "eyebrow": "The thesis",
+      "headline": "The last trillion-dollar industry software hasn't rebuilt.",
+      "subheadline": "SpaceX rewrote aerospace. Tesla rewrote the car. Building is next — and it's ours to take.",
+      "bullets": [
+        "Legacy builders run on paper, silos and rework.",
+        "Margins stay thin because the model never changed.",
+        "Kapitol was built digital-first from day one, 2018.",
+        "We compete on systems, data and AI — not just steel."
+      ]
+    },
+    {
+      "type": "beforeAfter",
+      "eyebrow": "The shift",
+      "headline": "Build-first is dead. We model first, build second.",
+      "left": {
+        "title": "The old industry",
+        "bullets": [
+          "Build first, find the problems on site.",
+          "A bespoke process on every project.",
+          "Data trapped in disconnected tools.",
+          "Peer margins stuck in low single digits."
+        ]
+      },
+      "right": {
+        "title": "The Kapitol model",
+        "bullets": [
+          "Model first, then build with certainty.",
+          "One standard process, run at scale.",
+          "Common data platform, connected end to end.",
+          "Margin and delivery beyond our peers."
+        ]
+      }
+    },
+    {
+      "type": "cards",
+      "eyebrow": "The playbook",
+      "headline": "The disruptor's playbook, applied to building.",
+      "cards": [
+        { "title": "First principles", "body": "Rebuild delivery from ground truth, not tradition." },
+        { "title": "Vertical integration", "body": "Own the digital stack across the whole project lifecycle." },
+        { "title": "The data flywheel", "body": "Every project makes the next one faster, safer, cheaper." },
+        { "title": "Reusable & modular", "body": "Standardise once, then repeat with centralised systems." }
+      ]
+    },
+    {
+      "type": "proof",
+      "eyebrow": "Proof of momentum",
+      "headline": "Not a pitch. A track record.",
+      "metrics": [
+        { "value": "2018", "label": "Founded — digital-first from day one" },
+        { "value": "55+", "label": "Major projects delivered" },
+        { "value": "~$1B", "label": "Annual revenue today" },
+        { "value": "3", "label": "States in our growth path" }
+      ]
+    },
+    {
+      "type": "section",
+      "eyebrow": "The tailwind",
+      "headline": "We're pouring the launchpads of the AI age.",
+      "subheadline": "The hyperscaler data-centre wave is the biggest infrastructure build of our lifetime."
+    },
+    {
+      "type": "content",
+      "eyebrow": "The tailwind",
+      "headline": "AI needs buildings. We build them.",
+      "subheadline": "Every model, every agent, every chip runs inside infrastructure someone has to deliver.",
+      "bullets": [
+        "Hyperscaler demand is driving a data-centre supercycle.",
+        "Kapitol has the pipeline and delivery momentum now.",
+        "This funds the capacity to invest and compound.",
+        "Picks and shovels for the intelligence economy."
+      ]
+    },
+    {
+      "type": "process",
+      "eyebrow": "Our North Star",
+      "headline": "Operational excellence is the launch platform for AI.",
+      "steps": [
+        { "title": "Standardise", "body": "One defined process, centralised and resource-leveraged." },
+        { "title": "Connect data", "body": "A common data platform, wired end to end." },
+        { "title": "Automate & apply AI", "body": "Embed AI to remove work, not add it." },
+        { "title": "Compound", "body": "Every cycle lifts productivity, margin and people." }
+      ]
+    },
+    {
+      "type": "proof",
+      "eyebrow": "The 2028 mission",
+      "headline": "Ambitious by design.",
+      "metrics": [
+        { "value": "2×", "label": "Productivity" },
+        { "value": "40hr", "label": "Work week" },
+        { "value": "10%", "label": "Margin" },
+        { "value": "$1.5B", "label": "Revenue, 3 states" },
+        { "value": "85%", "label": "Net promoter score" }
+      ]
+    },
+    {
+      "type": "cards",
+      "eyebrow": "The moat",
+      "headline": "Why the incumbents can't follow.",
+      "cards": [
+        { "title": "Digital DNA", "body": "Built software-native in 2018, not retrofitted." },
+        { "title": "Model-first delivery", "body": "Certainty engineered before the first pour." },
+        { "title": "AI & automation", "body": "A use-case pipeline compounding into advantage." },
+        { "title": "Systems thinking", "body": "We optimise the whole, not just the site." }
+      ]
+    },
+    {
+      "type": "content",
+      "eyebrow": "The build",
+      "headline": "The systems behind the mission.",
+      "subheadline": "Like any hard-tech company, our edge is the platform underneath.",
+      "bullets": [
+        "One unified enterprise technology strategy.",
+        "A target-state architecture built to scale.",
+        "A modern operating model with real ownership.",
+        "Portfolio governance that turns spend into value."
+      ]
+    },
+    {
+      "type": "closing",
+      "eyebrow": "The invitation",
+      "headline": "We don't build faster. We rebuild how building works.",
+      "subheadline": "Kapitol — the SpaceX and Tesla of construction.",
+      "cta": "Let's build the next decade."
+    }
+  ]
+}

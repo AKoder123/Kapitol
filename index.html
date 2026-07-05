@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Kapitol — FlowPitch</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ambient background layers (shared) -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-arc"></div>
+    <div class="bg-noise"></div>
+  </div>
+
+  <!-- ================= EDIT MODE ================= -->
+  <div id="editor" class="editor">
+    <!-- top toolbar -->
+    <header class="toolbar" id="toolbar">
+      <div class="toolbar-left">
+        <span class="brand">▲ FlowPitch</span>
+        <span class="brand-sep"></span>
+        <span class="deck-title" id="deckTitle" contenteditable="true" spellcheck="true"
+              data-edit-path="meta.title" aria-label="Deck title">Deck title</span>
+      </div>
+      <div class="toolbar-right">
+        <button id="presentBtn" type="button" class="btn btn-primary">▶ Present</button>
+        <button id="exportPdfBtn" type="button" class="btn">Export PDF</button>
+        <button id="downloadJsonBtn" type="button" class="btn">Download JSON</button>
+        <button id="resetDeckBtn" type="button" class="btn btn-ghost">Reset</button>
+      </div>
+    </header>
+
+    <div class="workspace">
+      <!-- thumbnail rail -->
+      <aside class="rail" aria-label="Slides">
+        <div class="rail-ops">
+          <button data-op="add"  type="button" class="op" title="Add slide" aria-label="Add slide">＋</button>
+          <button data-op="dup"  type="button" class="op" title="Duplicate slide" aria-label="Duplicate slide">⧉</button>
+          <button data-op="del"  type="button" class="op" title="Delete slide" aria-label="Delete slide">🗑</button>
+          <button data-op="up"   type="button" class="op" title="Move up" aria-label="Move slide up">↑</button>
+          <button data-op="down" type="button" class="op" title="Move down" aria-label="Move slide down">↓</button>
+        </div>
+        <div class="rail-list" id="railList"></div>
+      </aside>
+
+      <!-- central canvas -->
+      <main class="canvas" id="canvas">
+        <div class="editor-slide-frame" id="slideFrame">
+          <div class="slide-scaler" id="editScaler"></div>
+        </div>
+        <p class="canvas-hint">Click any text to edit it. Changes save automatically.</p>
+      </main>
+
+      <!-- inspector -->
+      <aside class="inspector" aria-label="Slide settings">
+        <h2 class="insp-h">Slide</h2>
+        <label class="insp-label" for="typeSelect">Layout</label>
+        <select id="typeSelect" class="insp-select">
+          <option value="title">Title</option>
+          <option value="section">Section</option>
+          <option value="content">Content</option>
+          <option value="cards">Cards</option>
+          <option value="beforeAfter">Before / After</option>
+          <option value="proof">Proof / Metrics</option>
+          <option value="process">Process</option>
+          <option value="closing">Closing</option>
+          <option value="visual">Visual</option>
+        </select>
+
+        <label class="insp-label" for="noteField">Speaker note</label>
+        <textarea id="noteField" class="insp-textarea" rows="5"
+                  placeholder="Notes for this slide…"></textarea>
+
+        <div class="insp-meta">
+          <span id="slidePos">—</span>
+          <span id="saveState" class="save-state">Saved</span>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- ================= PRESENT MODE ================= -->
+  <div id="stage" class="stage" aria-hidden="true">
+    <div class="stage-progress"><span id="stageBar"></span></div>
+    <div class="stage-viewport" id="stageViewport">
+      <div class="slide-scaler" id="presentScaler"></div>
+    </div>
+    <div class="stage-ui">
+      <button id="prevBtn" type="button" class="nav" aria-label="Previous slide">‹</button>
+      <span class="counter"><b id="counterCur">1</b> / <span id="counterTot">1</span></span>
+      <button id="nextBtn" type="button" class="nav" aria-label="Next slide">›</button>
+      <button id="exitBtn" type="button" class="nav nav-exit" aria-label="Exit present mode">Esc ✕</button>
+    </div>
+  </div>
+
+  <!-- off-screen capture stage for PDF -->
+  <div id="pdfStage" aria-hidden="true"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
